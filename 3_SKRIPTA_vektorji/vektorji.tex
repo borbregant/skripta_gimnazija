@@ -1,0 +1,145 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+\newtheorem*{zgled}{Zgled}
+
+\title{Vektorji}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\section{Vektorji v prostoru}
+
+Bazo prostora sestavljajo trije neodvisni vektorji. Vsak vektor v prostoru lahko torej enolično zapišemo kot njihovo linearno kombinacijo.\\
+Baza je ortogonalna, če so vektorji baze med sabo pravokotni. Baza je ortonormirana, če so vektorji pravokotni med sabo in dolžine $1$.\\
+Standardna baza je ortonormirana baza $\{\vec{i},\vec{j},\vec{k}\}$, kjer ti vektorji ležijo zaporedno na poltrakih koordinatnih osi $x,y$ in $z$.\\
+V tej standardni bazi , lahko vsako točko $A(a_1,a_2,a_3)$ predstavimo s krajevnim vektorjem $\vec{r_A}=a_1 \vec{i}+a_2\vec{j}+a_3\vec{k}$. Pišemo $\vec{r_A}=(a_1,a_2,a_3)$. Posebej $\vec{i}=(1,0,0) , \vec{j}=(0,1,0)$ in $\vec{k}=(0,0,1)$.
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{vektorji.pdf}
+\centering
+\end{figure}
+
+\begin{zgled}
+    Poiščimo eno ortogonalno in eno neoortogonalno bazo kocke.
+\end{zgled}
+
+\textbf{Računanje s krajevnimi vektorji:}
+
+$(a_1,a_2,a_3)+(b_1,b_2,b_3)=(a_1+b_1,a_2+b_2,a_3+b_3)$\\
+$n(a_1,a_2,a_3)=(na_1,na_2,na_3); n\in \mathbb{R}$
+
+\begin{zgled}
+    Zapišimo vektor daljice $AB$ in krajevni vektor razpolovišča te daljice. \href{https://youtu.be/KS_ZTJiAqdY}{Video rešitve}
+\end{zgled}
+\begin{zgled}
+    Dani sta točki $A(-2,2,6)$ in $B(3,2,-4)$. Točka $T$ leži na daljici $AB$, da $|AT|:|TB|=4:1$. Izračunajmo koordinate $T$.
+    \href{https://youtu.be/I5FE3vhoatk}{Video rešitve}
+\end{zgled}
+
+\begin{zgled}
+    Dana sta vektorja $\vec{a}=(3,-2,0)$ in $\vec{b}=(-1,4,3)$. Zapišimo linearne kombinacije $\vec{a}+\vec{b}$ in $2\vec{a}-\frac{1}{2}\vec{b}$.
+\end{zgled}
+
+\begin{zgled}
+    Določimo parameter $u$, da bosta vektorja $\vec{a}=(4,-6,u)$ in $\vec{b}=(-6,9,4)$ kolinearna. \href{https://youtu.be/bGx1agtOIvw}{Video rešitve}
+\end{zgled}
+
+\begin{zgled}
+    Pokažimo, da so vektorji $\vec{a}=(1,-1,3), \vec{b}=(2,1,0)$ in $\vec{c}=(0,-3,6)$ koplanarni. \href{https://youtu.be/-qfYWHrmi-8}{Video rešitve}
+\end{zgled}
+
+Velja še, da je krajevni vektor $\vec{r_T}$ težišča $T$ trikotnika $ABC$ enak $\vec{r_T}=\frac{1}{3}(\vec{r_A}+\vec{r_B}+\vec{r_C})$.
+
+\begin{example}
+    NALOGE 321, 322, 324, 330, 340
+\end{example}
+
+\section{Skalarni produkt}
+
+\[\vec{a}\cdot\vec{b}=|\vec{a}||\vec{b}|\cos\varphi, \ \text{kjer je}\  \varphi \ \text{vmesni kot}\]
+
+Dolžina pravokotne projekcije $\vec{b}$ na $\vec{a}$ je $pr_{\vec{a}}\vec{b}=|\vec{b}|\cos\varphi$.\\
+
+Za skalarni produkt velja komutativnost, distributivnost in homogenost.\\
+
+$\vec{a} \perp\vec{b} \iff \vec{a}\cdot\vec{b}=0$\\
+
+Dolžina vektorja $|\vec{a}|=\sqrt{\vec{a}\cdot\vec{a}}$\\
+
+Kosinusni izrek $c^2=a^2+b^2-2ab\cos\gamma$
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{skalarnu.produkt.pdf}
+\centering
+\end{figure}
+
+\begin{zgled}
+    Izračunajmo dolžino vektorja $\vec{a}$, če ima $\vec{b}$ dolžino $6$, njun skalarni produkt je enak 21, njun vmesni kot pa $60^\circ$. Izračunajmo še $pr_{\vec{a}}\vec{b}$.
+    \href{https://youtu.be/PCUppodHkyY}{Video rešitve}
+\end{zgled}
+\begin{zgled}
+    Dolžina vektorja $\vec{a}$ je 3, $|\vec{b}|=4$, dolžina $2\vec{a}-\vec{b}$ pa $\sqrt{76}$. Izračunajmo kot med $\vec{a}$ in $\vec{b}$.
+    \href{https://youtu.be/xMxlB981-ek}{Video rešitve}
+\end{zgled}
+\begin{zgled}
+    V paralelogramu $ABCD$ je $a=7cm, b=4cm, \alpha=36^\circ$. Izračunajmo dolžino diagonale $f$.
+    \href{https://youtu.be/cA2GKU8gsrw}{Video rešitve}
+\end{zgled}
+
+\begin{example}
+    357a, 360c, 366 ampak izračunaj kot med a in b, 375ab, 377ab
+\end{example}
+
+\subsection{Skalarni produkt v ortonormirani bazi}
+
+\[\vec{a}\cdot\vec{b}=a_1b_1+a_2b_2+a_3b_3\]
+\[|\vec{a}|=\sqrt{a_1^2+a_2^2+a_3^2}\]
+\[\cos\varphi=\frac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}=\frac{a_1b_1+a_2b_2+a_3b_3}{\sqrt{a_1^2+a_2^2+a_3^2}\sqrt{b_1^2+b_2^2+b_3^2}}\]
+
+\begin{zgled}
+    Za vektorja $\vec{a}=(2,1,4)$ in $\vec{b}=(1,0,-1)$ izračunajmo $(2\vec{a}+\vec{b})\cdot\vec{b}$.
+    \href{https://youtu.be/6Y_1Dqk4n-A}{Video rešitve}
+\end{zgled}
+\begin{zgled}
+    Določimo komponento $u$, da bosta $\vec{a}=(-3,2u,5)$ in $\vec{b}=(6,u,2)$ pravokotna.
+    \href{https://youtu.be/5CaojlnF_iI}{Video rešitve}
+\end{zgled}
+\begin{zgled}
+    Naloga z mature 2021. \href{https://youtu.be/Qari4okAS7w}{Video rešitve}
+\end{zgled}
+    \begin{figure}[H]
+    \includegraphics[width=\textwidth]{vektorji.naloga.png}
+    \end{figure}
+
+\begin{example}
+    NALOGE 388 (razdalja=dolžina vektorja), 389 (enotski vektor=vektor/dolžina), 390ac, 393, 399, 405, 408, 414
+\end{example}
+
+
+\end{document}
