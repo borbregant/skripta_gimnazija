@@ -1,4 +1,7 @@
-Sestavljanje izpitnih pol
+Priprave na pouk
 =========================
 
 Zbirka priprav na gimnazijski pouk matematike. Vsebuje tudi nekaj vaj kot priprave na teste.
+
+## Avtorji
+  - **Bor Bregant** \[aut, cre\].
