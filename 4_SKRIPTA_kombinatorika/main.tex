@@ -1,0 +1,123 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+\newtheorem*{zgled}{Zgled}
+
+\title{Kombinatorika}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+\begin{zgled}
+    Na koliko načinov lahko za ravno mizo sedi sedem povabljencev?
+\end{zgled}
+
+\textbf{Osnovni izrek kombinatorike ali pravilo produkta}: Če neki proces lahko razdelimo na $k$ zaporednih faz in je prva od faz izvedljiva na $n_1$ načinov, druga na $n_2$ načinov, tretja na $n_3$ načinov, … in $k$-ta na $n_k$ načinov (kjer so izbori med sabo neodvisni), je celotni proces izvedljiv na $n=n_1\cdot \ldots n_k$ načinov.
+
+\begin{zgled}
+    Na koliko načinov se lahko oblečemo, če imamo na razpolago dva para čevljev, pet srajc, troje hlač in štiri kravate?\\
+    Na koliko načinov lahko damo nase pokrivalo, če imamo na voljo 3 klobuke in dve čepici (\textit{nezdružljivost}).
+\end{zgled}
+
+
+\textbf{Pravilo vsote}: Če izbiramo med $n_1$ možnostmi iz prve množice izborov ali $n_2$ možnostmi iz druge množice naborov in tako naprej (kjer so izbori med sabo neodvisni in nezdružljivi) do $k$-tega nabora, potem je vseh izborov $M=n_1 + \ldots n_k$.
+
+\begin{zgled}
+    Do ŠKG lahko pridemo z avtobusi številk 3 ali 5, kjer v obeh primerih naprej prestopimo na 1, 8 ali 25, lahko pa gremo s kolesom ali z avtom. Na koliko različnih način lahko pridemo do šole?
+\end{zgled}
+
+\begin{zgled}
+    Koliko je vseh različnih metov, če petkrat zapored vržemo kovanec. Predstavi s \textbf{kombinatoričnim drevesom}.
+\end{zgled}
+
+\begin{example}
+    DN 232a, 248, 254
+\end{example}
+
+\section{Permutacije}
+
+Razporeditve $n$ različnih elementov na $n$ mest, kjer je vrstni red pomemben imenujemo permutacije $n$ elementov. Teh možnosti je $P_n = n! = n (n-1)(n-2)\cdot \ldots \cdot 2\cdot 1$.
+
+\begin{zgled}
+    Izračunaj $4!$ in $\frac{n!}{(n-1)!}$.
+\end{zgled}
+
+\begin{zgled}
+    Koliko besed lahko sestavimo iz črk $ABCDE$, če:\\
+    Ni omejitev?\\
+    Besede se morajo začeti na $D$\\
+    Besede se ne začnejo niti na $A$ niti na $E$\\
+    Besede se ne končajo na $DA$
+\end{zgled}
+
+\begin{zgled}
+    Šestčlanska družina gre v kino. Na koliko načinov se lahko usede v vrsto, če sedita starša skupaj in otroci skupaj. Kaj pa če starša sedita na obeh koncih, otroci pa med njima.
+\end{zgled}
+
+\begin{zgled}
+    Sedem otrok stoji v vrsti. Na koliko načinov jih lahko prestavimo, če trije najbolj živahni ne smejo biti vsi skupaj.
+\end{zgled}
+
+\begin{zgled}
+    Preštejmo vse permutacije črk besede $ANANAS$.
+\end{zgled}
+
+Permutacij $n$ elementov, kjer se en ponavlja $k_1$-krat, drugi $k_2$-krat in tako naprej, je $P_n ^{k_1,\ldots k_r}=\frac{n!}{k_1 ! \cdots k_r !}$
+
+\begin{zgled}
+    Koliko besed iz črk $BOMBAZ$ se ne začne s črko $A$.
+\end{zgled}
+
+\begin{example}
+    DN 262, 263, 273, 267, 281, 292.
+\end{example}
+
+\section{Variacije}
+
+$n$ elementov razporejamo na $r$ mest ($r<n$).
+
+\begin{zgled}
+    Na koliko načinov lahko razporedimo 10 dijakov za mizo za 4 osebe.
+\end{zgled}
+
+Variacije brez ponavljanja:
+\[V_n ^r = N(n-1)(n-2)\cdots (n-r+1)=\frac{n!}{(n-r)!}\]
+
+\begin{zgled}
+    Koliko trimestnih števil lahko sestavimo s števkami $1,2,5,8$, če se števke ne smejo ponavljati. Kaj pa će dodamo $0$.
+\end{zgled}
+
+\begin{zgled}
+    Ponavljanje
+\end{zgled}
+
+Variacije s ponavljanjem
+
+
+
+\end{document}

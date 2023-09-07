@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+\newtheorem*{zgled}{Zgled}
+
+\title{Obrestni račun}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\section{Terminologija}
+
+\begin{itemize}
+    \item Glavnica: denarna vrednost, ki jo damo banki v hrambo ali dolg v primeru izposoje. $G$
+    \item Obrestna mera (v \%): Vpliva na povečanje oz. zmanjšanje glavnice. $p$
+    \item Čas obrestovanja (v dneh, mesecih, letih) $n$
+    \item Kapitalizacijska oz. obrestovalna doba: Časovno obdobje, po katerem se obresti pripišejo glavnici.
+\end{itemize}
+
+Navadno obrestovanje: Obresti ne obrestuje naprej - vezano le na glavnico.
+Aritmetično zaporedje - diferenca $\frac{Gp}{100}$
+\[G_1 = G+G\cdot\frac{p}{100}\]
+\[G_2 = G+2G\frac{p}{100}\]
+\[G_n=G+nG\frac{p}{100}\]
+
+Obrestno obrestovanje: Obresti obrestujejo - glavnice tvorijo geometrijsko zaporedje:\\
+\[G_1=g+G\frac{p}{100}=G(1+\frac{p}{100})=Gr; r=1+\frac{p}{100}\ \text{obrestovalni faktor}\]
+\[G_2=G(q+\frac{p}{100})^2=Gr^2\]
+\[G_n=G(1+\frac{p}{100})^n=Gr^n\]
+
+\begin{zgled}
+    Na banko položimo $1000E$ pri $5\%$ obrestni meri za $40$ let. Za koliko se v tem času spremeni glavnica pri navadnem in obrestnem obrestovanju?
+\end{zgled}
+\begin{zgled}
+    Ali se bolj splača: Takoj dobiti $100E$ in čez dve leti še $50E$, ali pa takoj dobiti $50E$ in čez eno leto še $110E$, če je pripis obresti konec leta po obrestni meri $5\%$.
+\end{zgled}
+
+Načelo ekvivalence glavnic:
+
+\begin{example}
+    \textcolor{red}{331ab}, \fbox{339a}bcd, \fbox{343}-347, \fbox{355a}b, 361ac, \fbox{372a}bc,
+\end{example}
+
+
+
+\end{document}
