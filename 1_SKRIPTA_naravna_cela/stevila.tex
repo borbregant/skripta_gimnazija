@@ -8,6 +8,7 @@
 \usepackage{blindtext}
 \usepackage{hyperref}
 \usepackage{verbatim}
+\usepackage{graphicx}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -17,6 +18,9 @@
     pdfpagemode=FullScreen,
     }
 \usepackage[slovene]{babel}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
 
 \newcounter{example}[section]
 \newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
@@ -34,7 +38,8 @@
 
 \section{Naravna števila}
 
-Števila s katerimi štejemo $\mathbb{N}=\{1,2,3,\ldots\}$.\\
+Števila s katerimi štejemo $\mathbb{N}=\{1,2,3,\ldots\}$.
+
 Peanovi aksiomi:
 \begin{itemize}
     \item $1\in\mathbb{N}$
@@ -43,8 +48,11 @@ Peanovi aksiomi:
     \item Če neka trditev velja z vsakim naravnim številom tudi za njegovega naslednika, velja za vsa naravna števila.
 \end{itemize}
 
-Osnovni operaciji $+$ in $\cdot$ (notranji). Seštevanec, vsota, faktor, produkt.\\
-Komutativnost $a+b=b+a \ ,\cdot$, asociativnost $(a+b)+c=a+(b+c)$, distributivnost $(a+b)c=ac+bc$.
+Osnovni operaciji $+$ in $\cdot$ (notranji). Seštevanec, vsota, faktor, produkt.
+
+Komutativnost $a+b=b+a \ ,\cdot$\\
+Asociativnost $(a+b)+c=a+(b+c)$\\
+Distributivnost $(a+b)c=ac+bc$.
 
 
 \begin{zgled}
@@ -70,12 +78,20 @@ Dodamo nasprotna števila $n\rightarrow -n$. $\mathbb{Z}$ konstruiramo kot unija
 
 Dodamo $-$, ki je definirano kot kot prištevanje nasprotne vrednosti.
 
-Nekaj aksiomov in pravil, urejenost. Vrstni red pri računanju.
+Nekaj aksiomov in pravil:
 
-Aksiom: $a+0=a$, $-(-a)=a$, $1\cdot a =a$ $\forall a\in\mathbb{Z}$\\
+Aksiom: $a+0=a$, $-(-a)=a$, $1\cdot a =a$ $\forall a\in\mathbb{Z}$
+
 Izrek: $-(a)+(-b)=-(a+b)$, $0\cdot a =0$.
 
-Urejenost (primerjamo števila): Velja natanko ena od možnosti $a<b,a>b,a=b$. $a>b$ če in samo če $a-b>0$ (slika $a$ leži na desni strani številske premice od števila $b$)
+Urejenost (primerjamo števila): Velja natanko ena od možnosti $a<b,a>b,a=b$. $a>b$ če in samo če $a-b>0$ (slika $a$ leži na desni strani številske premice od števila $b$).
+
+Za relacijo "biti manjši ali enak" (in podobno za $\geq$) veljajo lastnosti:
+
+Refleksivnost $a\leq a$,\\
+Antisimetričnost $a\leq b \land b\leq a \Rightarrow a=b$,\\
+Tranzitivnost $a\leq b \land b\leq c \Rightarrow a\leq c$.
+
 
 \begin{zgled}
     Trikratniku števila $62$ odštejemo petkratnik vsote števil $93$, $82$ in $8$. Katero število dobimo?
@@ -87,18 +103,20 @@ Urejenost (primerjamo števila): Velja natanko ena od možnosti $a<b,a>b,a=b$. $
 
 \section{Potence z naravnimi eksponenti}
 
-\[a^n=a\cdot\ldots\cdot a\]
+\[a^n=\underbrace{a\cdot\ldots\cdot a}_{n}\]
 
 Osnova, eksponent, potenca
 
 Pravila z dokazi:
-\[a^n\cdot a^m =a^{n+m}\]
-\[\left(a^n\right)^m=a^{n\cdot m}\]
-\[\left(ab\right)^n=a^n b^n\]
-\[a^1=a, \ 1^n = 1\]
+\begin{align*} 
+a^n\cdot a^m &=a^{n+m}\\
+\left(a^n\right)^m&=a^{n\cdot m}\\
+\left(ab\right)^n&=a^n b^n\\
+a^1&=a, \ 1^n = 1
+\end{align*}
 
 \begin{zgled}
-    Izračunaj $x^2 \cdot x^9 +2x\cdot x^{10}$, $\left(a^n\right)^2\cdot\left(a^3 \right)^n$, $\left(u^2v^3\right)^2$, $\left(a^2b\right)^3\left(3ab^3\right)^2a^2$ in $(-1)^{2023}\cdot (-1)^{2024}$.
+    Izračunaj $x^2 \cdot x^9 +2x\cdot x^{10}$, $\left(a^n\right)^2\cdot\left(a^3 \right)^n$, $\left(u^2v^3\right)^2$, $\left(a^2b\right)^3\left(3ab^3\right)^2a^2$ in $(-1)^{2023}\cdot (-1)^{2024}$, $(2x^3)^2\cdot (-3x^4)^2$.
 \end{zgled}
 
 \begin{example}
@@ -109,13 +127,15 @@ Pravila z dokazi:
 
 Večkratnik ali $k$-kratnik števila $a$ je vsota $k$ enakih sumandov $a$: $k\cdot a = a+\ldots +a$.
 
-\[(a+b)^2=a^2+2ab+b^2 \ \text{kvadrat vsote}\]
-\[(a-b)^2=a^2-2ab+b^2\]
-\[(a+b)^3=a^3+3a^2b+3ab^2+b^3\]
-\[(a-b)^3=a^3-3a^2b+3ab^2-b^3\]
-\[a^2-b^2=(a+b)(a-b)\]
-\[a^3\pm b^3=(a\pm b)(a^2\mp ab+b^2)\]
-\[ab+ac =a(b+c)\]
+\begin{align*}
+(a+b)^2&=a^2+2ab+b^2 \ \text{kvadrat vsote}\\
+(a-b)^2&=a^2-2ab+b^2 \ \text{kvadrat razlike}\\
+(a+b)^3&=a^3+3a^2b+3ab^2+b^3 \ \text{kub vsote}\\
+(a-b)^3&=a^3-3a^2b+3ab^2-b^3 \ \text{kub razlike}\\
+a^2-b^2&=(a+b)(a-b) \ \text{razlika kvadratov}\\
+a^3\pm b^3&=(a\pm b)(a^2\mp ab+b^2) \ \text{vsota (razlika) kubov}\\
+ab+ac &=a(b+c) \ \text{izpostavljanje skupnega faktorja}
+\end{align*} 
 
 \begin{zgled}
     Izračunaj $(2a+3b)^2$, $(x-2y)^2$, $(3u+v)^3$, $(2-5n)^3$ in $(x^2-2x-3)(x^2+3x)$.
@@ -129,27 +149,36 @@ Večkratnik ali $k$-kratnik števila $a$ je vsota $k$ enakih sumandov $a$: $k\cd
     Razstavi $x^2+2x+1$, $a^2-9$, $16a^2-81$, $25+10a+a^2$, $x^3+64y^3$, $3a+6a^2$, $ac+ad+bc+bd$ in $2x^2-2xz+xy-yz$.
 \end{zgled}
 
+\begin{zgled}
+    Razstavi $x^4-3x^3+2x^2$, in $a^4b+64ab$.
+\end{zgled}
+
 \begin{example}
-    DN 114a, 122a, 123a, 124 prvi stolpec, 125 prvi stolpec, 130a, 131ch, 135a
+    DN 114a, 122a, 123a, 124acd, 125acd, 130a, 131ch, 135a
 \end{example}
 
-\[a^n-b^n=(a-b)(a^{n-1}+a^{n-2}b+a^{n-3}b^2+\ldots + ab^{n-2}+b^{n-1})\]
-\[a^{2n+1}+b^{2n+1}=(a+b)(a^{2n}-a^{2n-1}b+a^{2n-2}b^2+\cdots -ab^{2n-1}+b^{2n})\]
+\begin{align*}
+a^n-b^n&=(a-b)(a^{n-1}+a^{n-2}b+a^{n-3}b^2+\ldots + ab^{n-2}+b^{n-1})\\
+a^{2n+1}+b^{2n+1}&=(a+b)(a^{2n}-a^{2n-1}b+a^{2n-2}b^2+\cdots -ab^{2n-1}+b^{2n}) \ \text{lihi naravni eksponenti}
+\end{align*}
 
 \begin{zgled}
     Izračunaj $a^7-1$, $a^5+32b^5$.
 \end{zgled}
 
 Vietovo pravilo
-
 \[x^2+(a+b)x+ab=(x+a)(x+b)\]
 
 \begin{zgled}
     Razstavi $x^2+5x+6$, $x^2-11x+18$, $m^2+7m-8$ in $a^4+a^2-20$.
 \end{zgled}
 
+\begin{zgled}
+    Razstavi $a^2+10ab+24b^2$ in $x^3+x^2+3x+3$.
+\end{zgled}
+
 \begin{example}
-    DN 127 prvi stolpec, 128 prvi stolpec
+    DN 127ac, 128b, 132a
 \end{example}
 
 \end{document}
