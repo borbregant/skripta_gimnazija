@@ -3,13 +3,12 @@
 \usepackage{pgfplots}
 \pgfplotsset{width=10cm,compat=1.9}
 \usepackage{amsmath,amssymb,amsthm}
-\usepackage{gensymb}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{xcolor}
 \usepackage{blindtext}
 \usepackage{hyperref}
-\usepackage[margin=1in]{geometry}
+\usepackage{verbatim}
+\usepackage{graphicx}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -19,6 +18,9 @@
     pdfpagemode=FullScreen,
     }
 \usepackage[slovene]{babel}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
 
 \newcounter{example}[section]
 \newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
@@ -43,16 +45,20 @@
     \item Kapitalizacijska oz. obrestovalna doba: Časovno obdobje, po katerem se obresti pripišejo glavnici.
 \end{itemize}
 
-Navadno obrestovanje: Obresti ne obrestuje naprej - vezano le na glavnico.
+Navadno obrestovanje: Obresti ne obrestuje naprej - vezano le na glavnico.\\
 Aritmetično zaporedje - diferenca $\frac{Gp}{100}$
-\[G_1 = G+G\cdot\frac{p}{100}\]
-\[G_2 = G+2G\frac{p}{100}\]
-\[G_n=G+nG\frac{p}{100}\]
+\begin{align*} 
+G_1 &= G+G\cdot\frac{p}{100}\\
+G_2 &= G+2G\frac{p}{100}\\
+G_n &=G+nG\frac{p}{100}
+\end{align*} 
 
-Obrestno obrestovanje: Obresti obrestujejo - glavnice tvorijo geometrijsko zaporedje:\\
-\[G_1=g+G\frac{p}{100}=G(1+\frac{p}{100})=Gr; r=1+\frac{p}{100}\ \text{obrestovalni faktor}\]
-\[G_2=G(q+\frac{p}{100})^2=Gr^2\]
-\[G_n=G(1+\frac{p}{100})^n=Gr^n\]
+Obrestno obrestovanje: Obresti obrestujejo - glavnice tvorijo geometrijsko zaporedje:
+\begin{align*} 
+G_1&=G+G\frac{p}{100}=G(1+\frac{p}{100})=Gr; r=1+\frac{p}{100}\ \text{obrestovalni faktor}\\
+G_2&=G(q+\frac{p}{100})^2=Gr^2\\
+G_n&=G(1+\frac{p}{100})^n=Gr^n
+\end{align*} 
 
 \begin{zgled}
     Na banko položimo $1000E$ pri $5\%$ obrestni meri za $40$ let. Za koliko se v tem času spremeni glavnica pri navadnem in obrestnem obrestovanju?
@@ -63,10 +69,37 @@ Obrestno obrestovanje: Obresti obrestujejo - glavnice tvorijo geometrijsko zapor
 
 Načelo ekvivalence glavnic:
 
-\begin{example}
-    \textcolor{red}{331ab}, \fbox{339a}bcd, \fbox{343}-347, \fbox{355a}b, 361ac, \fbox{372a}bc,
-\end{example}
+Relativni način obračunavanja: Večkratni pripis obresti pomeni več kapitalizacijskih dob.
+\begin{align*} 
+    r_\text{polletni}&=1+\frac{p}{100}\cdot\frac{1}{2}\\
+    r_\text{mesečni}&=1+\frac{p}{100}\cdot\frac{1}{12}\\
+    r_\text{$m$ obdobij}&=1+\frac{p}{100}\cdot\frac{1}{m}
+\end{align*}
 
+\begin{zgled}
+    194, 196, 199, 208, 209.
+\end{zgled}
 
+\section{Obročna vplačila in izplačila}
+
+\begin{itemize}
+    \item Varčevanje: Obročno vlaganje
+    \item Kredit: Z amortizacijskim načrtom odplačujemo dolg. Obrok dolga imenujemo anuiteta
+\end{itemize}
+
+\begin{align*}
+    G_{\text{privarčevan}} &= vr^{n-1}+vr^{n-2}+\ldots+vr^2+vr+v\\
+        &=v(1+r+r^2+\ldots+r^{n-1})\\
+        &=\frac{v(r^n-1)}{r-1}
+\end{align*} 
+
+\begin{align*}
+    D\cdot r^n &= a+ar+ar^2+\ldots+ar^{n-1}=\frac{a(r^n -1)}{r-1}\\
+    a&=\frac{Dr^n (r-1)}{r^n -1}
+\end{align*} 
+
+\begin{zgled}
+    219, 220, 231
+\end{zgled}
 
 \end{document}
