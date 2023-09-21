@@ -59,12 +59,48 @@ Skupna slika vsega zgoraj
 
 Središčni kot je kot, ki ima vrh v središču kroga, kraka pa potekata skozi dve točki na krožnici. Obodni kot nad lokom $AB$. Središčni kot je še enkrat večji od obodnega kota nad istim lokom z dokazom.\\
 \begin{figure}[H]
-    \includegraphics[width=0.5\textwidth]{srediscni_kot.pdf}
+    \includegraphics[width=0.4\textwidth]{srediscni_kot.pdf}
     \centering
 \end{figure}
 Posledica: Vsi obodni koti nad istim lokom so skladni.\\
 Posledica: Če je središčni kot iztegnjeni kot, je njegov obodni kot pravi kot (Talesov izrek).
 
+
+Risanje tangente na krožnico skozi poljubno točko s pomočjo Talesovega izreka
+\begin{enumerate}[i]
+    \item Poveži $S$ (središče) in $T$ (zunanja točka).
+    \item Razpolovišče $ST\rightarrow S'$
+    \item Polkrog iz $S'$, radij $|SS'|$
+    \item Dobimo dve tangenti
+\end{enumerate}
+\begin{figure}[H]
+    \includegraphics[width=0.6\textwidth]{risanje_tangente.pdf}
+    \centering
+\end{figure}
+
+Merjenje kotov:
+
+Stopinje, minute, sekunde\\
+$1\degree$ je $\frac{1}{360}$ polnega kota\\
+$1\degree=60'$ in $1'=60''$.
+
+Radiani:\\
+Kot meri en radian, če mu priprada lok z dolžino radija
+\begin{figure}[H]
+    \includegraphics[width=0.6\textwidth]{radiani.pdf}
+    \centering
+\end{figure}
+Polni kot: $2\pi$ radianov\\
+
+
+\begin{zgled}
+    Nariši $\Delta ABC$, v katerem $c=6cm,\ v_c = 2cm,\ \gamma=60\degree$.\\
+    \textcolor{gray}{Ideja: Začnemo s $c$ in naredimo vzporednico za višino. Želimo središčni kot $120\degree$. Ker je središčni enakokrak, bosta ostala kota $30\degree$. $\gamma$ bo torej obodni kot za krožnico s središčem $S$ in polmerom $AS$.}
+\end{zgled}
+
+\begin{example}
+    Konstruiraj trikotnik s podatki $a=5cm,\ t_a =4cm,\ \alpha=30\degree$.
+\end{example}
 
 
 
@@ -88,7 +124,7 @@ Vsota notranjih kotov štirikotnika je $360\degree$. \textit{dokaz s triangulaci
     \item Dva para vzporednih stranic
     \item Diagonali se razpolavljata
     \item Poljubna sosednja kota sta suplementarna
-    \item Poljubna nasprotna kota sta enako veliko
+    \item Poljubna nasprotna kota sta enako velika
   \end{enumerate}
 
 
@@ -162,7 +198,12 @@ Pravilni $n$-kotnik - vse stranice in notranji koti enaki. Vsota kotov = $(n-2)1
 \end{zgled}
 
 \begin{zgled}
-    Če $n$-kotniku podvojimo število stranic, se njegovor število diagonal pomnoži z $5$. Kateri $n$-kotnik je to.
+    Načrtaj tangenten trapez s podatki $a=6cm$, $\alpha =60\degree$ in polmerom včrtane krožnice $r=2cm$.\\
+    \textcolor{gray}{$a, \ \alpha \rightarrow$ simetrala $\alpha$, vzporednica $a$ oddaljena za $r$, $\rightarrow$ $S$}
+\end{zgled}
+
+\begin{zgled}
+    Če $n$-kotniku podvojimo število stranic, se njegovo število diagonal pomnoži z $5$. Kateri $n$-kotnik je to.
 \end{zgled}
 
 \begin{example}
@@ -182,7 +223,7 @@ Pravilni $n$-kotnik - vse stranice in notranji koti enaki. Vsota kotov = $(n-2)1
 
 Trikotnika $ABC$ in $A_1 B_1 C_1$ sta podobna, če imata enaka razmerja vseh stranic in enake vse notranje kote ali ekvivalentno če se ujemata v:
 \begin{enumerate}[i]
-    \item razmerju dveh enakoležnih stranic $a:a_a = b:b_1 =c: c_1$.
+    \item razmerju dveh enakoležnih stranic $a:a_1 = b:b_1 =c: c_1$.
     \item dveh notranjih kotih npr. $\alpha = \alpha_1$, $\beta =\beta_1$.
     \item razmerju dveh stranic in vmesni kot npr. $\alpha =\alpha_1$, $b:b_1 = c: c_1$.
     \item razmerju dveh stranic in v kotu nasproti daljše stranice.
@@ -195,15 +236,28 @@ Trikotnika $ABC$ in $A_1 B_1 C_1$ sta podobna, če imata enaka razmerja vseh str
     \item Tranzitivnost $L_1 \sim L_2 \land L_2 \sim L_3 \Rightarrow L_1 \sim L_3$.
   \end{enumerate}
 
-  SREDIŠČNI RAZTED, GEOMETRIJSKA SREDINA?????
-
-  Razmerje = kvocient dveh količin (npr. dolžin daljic)\\
-  Sorazmerje = enakost dveh razmerij
-
-    \begin{figure}[H]
-    \includegraphics[width=0.6\textwidth]{tales_sorazmerja.pdf}
+  Središčni razteg (homotetija) s središčem v točki $O$ in faktorjem $k$ je preslikava, ki daljico $OA$ preslika v daljico $OA'$, da velja $|OA'|=k\cdot |OA|$.
+  \begin{enumerate}[i]
+    \item Ohranja kote (oblike, tudi vzporednost)
+    \item $|k|>1$ pomeni razteg, $|k|<1$ pomeni skrčitev, $k<0$ doda še zrcaljenje.
+    \item Podobnostna preslikava, saj like slika v njim podobne like.
+  \end{enumerate}
+  \begin{figure}[H]
+    \includegraphics[width=0.65\textwidth]{homotetija.pdf}
     \centering
     \end{figure}
+
+  Geometrijska sredina $a:x=x:b\rightarrow x=\sqrt{ab}$\\
+  Primer: Geometrijska sredina $2$ in $18$ je $6$. Velja $2\times 18$ = $6\times 6$ (ploščina)\\
+  Primer kasneje: Višinski izrek
+
+  Razmerje = kvocient dveh količin (npr. dolžin daljic)\\
+  Sorazmerje = enakost dveh razmerij\\
+  Talesov izrek:
+\begin{figure}[H]
+    \includegraphics[width=0.6\textwidth]{tales_sorazmerja.pdf}
+    \centering
+\end{figure}
 
 \begin{zgled}
     Stranice $\Delta ABC$ so v razmerju $2:5:4$, njegov obseg pa meri $5.5cm$. Kako dolge so stranice trikotnika.
@@ -223,9 +277,8 @@ Trikotnika $ABC$ in $A_1 B_1 C_1$ sta podobna, če imata enaka razmerja vseh str
 \end{example}
 
 Višinski izrek $v^2 =a_1 b_1$, Evklidov izrek $a^2=a_1 c$, $b^2=b_1 c$, Pitagorov izrek $c^2=a^2+b^2$.
-
     \begin{figure}[H]
-    \includegraphics[width=0.8\textwidth]{evklidov_visinski.pdf}
+    \includegraphics[width=0.6\textwidth]{evklidov_visinski.pdf}
     \centering
     \end{figure}
 
