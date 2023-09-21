@@ -161,7 +161,7 @@
 % \@sloeng vrne prvi argument v slovenskih in drugega v angleskih izpitih.
 \newcommand{\@sloeng}[2]{\ifthenelse{\boolean{@slovenski}}{#1}{#2}}
 
-\newcommand{\ime@oznaka}{\@sloeng{Ime in priimek}{Name and surname}}
+\newcommand{\ime@oznaka}{\@sloeng{Ime in priimek, razred}{Name and surname}}
 \newcommand{\vpisna@oznaka}{\@sloeng{Vpisna \v{s}tevilka}{Student ID}}
 \newcommand{\sedez@oznaka}{\@sloeng{Sede\v{z}}{Seat}}
 \newcommand{\naloga@oznaka}[1]{\@sloeng{#1. naloga}{Question #1}}
