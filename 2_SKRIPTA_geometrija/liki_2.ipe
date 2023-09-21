@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230912191800" modified="D:20230913150031"/>
+<info created="D:20230912191800" modified="D:20230921131114"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -345,11 +345,6 @@ h
 <text transformations="translations" pos="200.702 648.155" stroke="black" type="label" width="5.703" height="4.289" depth="0" valign="baseline" style="math">u</text>
 <text matrix="1 0 0 1 -2.40887 -5.21921" transformations="translations" pos="140.48 718.413" stroke="black" type="label" width="5.187" height="4.289" depth="0" valign="baseline" style="math">v</text>
 <text matrix="1 0 0 1 0 -3.21182" transformations="translations" pos="175.409 703.157" stroke="black" type="label" width="5.187" height="4.289" depth="0" valign="baseline" style="math">v</text>
-<path stroke="black">
-332.71 702.725 m
-320 640 l
-379.43 616.249 l
-</path>
 <text matrix="1 0 0 1 -3.7084 0" transformations="translations" pos="278.99 601.523" stroke="black" type="label" width="6.41" height="4.289" depth="0" valign="baseline" style="math">\alpha</text>
 <text matrix="1 0 0 1 -2.16323 -0.9271" transformations="translations" pos="326.581 642.624" stroke="black" type="label" width="11.391" height="6.42" depth="0" valign="baseline" style="math">2\alpha</text>
 <use name="mark/disk(sx)" pos="9.26976 676.287" size="normal" stroke="red"/>
@@ -361,7 +356,7 @@ h
 <use name="mark/disk(sx)" pos="379.43 616.249" size="normal" stroke="red"/>
 <use name="mark/disk(sx)" pos="332.71 702.725" size="normal" stroke="red"/>
 <text transformations="translations" pos="112 608" stroke="black" type="label" width="35.7" height="6.661" depth="1.93" valign="baseline">tangenti</text>
-<text transformations="translations" pos="304 608" stroke="black" type="label" width="28.504" height="6.654" depth="0" valign="baseline">tetivni</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="304 608" stroke="black" type="label" width="28.504" height="6.654" depth="0" valign="baseline">tetivni</text>
 <path stroke="black">
 576 640 m
 565.84 674.601 l
@@ -377,5 +372,10 @@ h
 h
 </path>
 <text transformations="translations" pos="496 608" stroke="black" type="label" width="40.681" height="6.918" depth="0" valign="baseline">$11$-kotnik</text>
+<path stroke="black">
+332.71 702.725 m
+320 640 l
+327.231 576.41 l
+</path>
 </page>
 </ipe>
