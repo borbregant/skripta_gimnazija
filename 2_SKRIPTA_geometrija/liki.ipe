@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230912191800" modified="D:20230912191800"/>
+<info created="D:20230912191800" modified="D:20230925140252"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -393,5 +393,7 @@ h
 <text transformations="translations" pos="222.26 544" stroke="black" type="label" width="38.55" height="6.926" depth="1.93" valign="baseline">srednjica</text>
 <text transformations="translations" pos="192 544" stroke="black" type="label" width="7.929" height="6.808" depth="0" valign="baseline" style="math">E</text>
 <text transformations="translations" pos="344 544" stroke="black" type="label" width="7.79" height="6.808" depth="0" valign="baseline" style="math">F</text>
+<text transformations="translations" pos="256 592" stroke="black" type="label" width="42.12" height="6.654" depth="0" valign="baseline">osnovnica</text>
+<text transformations="translations" pos="256 496" stroke="black" type="label" width="42.12" height="6.654" depth="0" valign="baseline">osnovnica</text>
 </page>
 </ipe>
