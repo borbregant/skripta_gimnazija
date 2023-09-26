@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230912191800" modified="D:20230925140400"/>
+<info created="D:20230912191800" modified="D:20230926130700"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -371,11 +371,29 @@ h
 565.84 605.399 l
 h
 </path>
-<text transformations="translations" pos="496 608" stroke="black" type="label" width="40.681" height="6.918" depth="0" valign="baseline">$11$-kotnik</text>
+<text matrix="1 0 0 1 26.4041 9.99075" transformations="translations" pos="496 608" stroke="black" type="label" width="40.681" height="6.918" depth="0" valign="baseline">$11$-kotnik</text>
 <path stroke="black">
 332.71 702.725 m
 320 640 l
 327.231 576.41 l
 </path>
+<path stroke="black">
+512 640 m
+450.592 658.031 l
+</path>
+<path stroke="black">
+512 640 m
+450.592 621.969 l
+</path>
+<path stroke="black">
+490.577 582.275 m
+13.538 0 0 -13.538 502.892 576.651 516.292 578.578 a
+</path>
+<path stroke="black">
+497.974 635.882 m
+14.6184 0 0 -14.6184 512 640 497.974 644.118 a
+</path>
+<text matrix="1 0 0 1 4.51962 -43.0554" transformations="translations" pos="480.573 637.669" stroke="black" type="label" width="39.819" height="10.3" depth="3.43" valign="baseline" style="math">\frac{(n-2)180^\circ}{2}</text>
+<text matrix="1 0 0 1 0.9515 0.9515" transformations="translations" pos="470.582 636.48" stroke="black" type="label" width="18.47" height="9.391" depth="3.43" valign="baseline" style="math">\frac{360^\circ}{n}</text>
 </page>
 </ipe>
