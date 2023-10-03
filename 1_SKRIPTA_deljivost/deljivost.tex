@@ -24,7 +24,7 @@
 
 \newtheorem*{zgled}{Zgled}
 
-\title{Naravna in cela števila}
+\title{Deljivost}
 \author{Bor Bregant}
 \date{\vspace{-5ex}}
 
@@ -34,6 +34,35 @@
 
 \section{Relacija deljivosti}
 
+
+\section{Kriteriji deljivosti}
+
+Izpeljava deljivost, da izpostavljamo $10^i$, razcepino na prafaktorje $10^i$. S to izpeljavo pokrijemo 2, 4, 5, 8
+
+Deljivost s $3$:
+
+\begin{align*}
+\overline{a_4 a_3 a_2 a_1 a_0} &=\\
+ &=a_4 \cdot 10000 + \ldots + a_0\\
+ &=a_4 (9999+1)+a_3(999+1)+a_2(99+1)+a_1(9+1)+a_0\\
+ &=9999a_4 + a_4 + \ldots + 9a_1 +a_1 +a_0\\
+ &=9999a_4+999a_3+99a_2+9a_1 +a_4+a_3+a_2+a_1+a_0\\
+ &=9(1111a_4 +111a_3+11a_2+a_1)+a_4+a_3+a_2+a_1+a_0\\
+\end{align*}
+
+Če bo vsota števk deljiva s $3$ (ali z $9$), bo celotno število deljivo s $3$ (ali z $9$).
+
+\begin{zgled}
+    Ali je $32154032$ deljivo s $2,3,4,5,6$.
+\end{zgled}
+
+\begin{zgled}
+    Določi števko $a$, da bo število $35167a2$ deljivo s $6$. \textcolor{gray}{$a\in\{0,3,6,9\}$}
+\end{zgled}
+
+\begin{zgled}
+    Določi števki $a$ in $b$, da bo število $1573a4b$ deljivo s $6$.
+\end{zgled}
 
 
 \end{document}
