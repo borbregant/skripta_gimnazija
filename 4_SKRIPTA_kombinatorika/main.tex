@@ -9,6 +9,7 @@
 \usepackage{xcolor}
 \usepackage{blindtext}
 \usepackage{hyperref}
+\usepackage{enumerate}
 \usepackage[margin=1in]{geometry}
 \hypersetup{
     colorlinks=true,
@@ -197,8 +198,47 @@ Na voljo $n$ elementov, izberemo $r$ elementov, vrstni red ni pomemben.
 
 Hitro računanje binoma: $\binom{98}{4}=\frac{98\cdot 87\cdot 96\cdot 95}{4\cdot 3\cdot 2 \cdot 1}$. (enako cifer zgoraj kot spodaj)
 
+\subsection{Lastnosti binomskih simbolov}
 
+\begin{enumerate}[i]
+    \item $\binom{n}{0}=1$ Med $n$ elementi jih izberemo $0$
 
+            Dokaz $\binom{n}{0}=\frac{n!}{(n-0)!\cdot 0!} =1$
+    \item $\binom{n}{1}=n$
+    \item   Simetričnost $\binom{n}{r}=\binom{n}{n-r}$
+    
+            Dokaz $\binom{n}{r}=\frac{n!}{(n-r)!r!}=\frac{n!}{(n-(n-r))!\cdot (n-r)!}=\binom{n}{n-r}$
 
+            Posledica $\binom{n}{n}=\binom{n}{n-n}=\binom{n}{0}=1$
+    \item   Aditivnost $\binom{n}{r}+\binom{n}{r+1}=\binom{n+1}{r+1}$
+    
+            Dokaz s Pascalovim trikotnikom
+  \end{enumerate}
+
+\begin{zgled}
+    Izračunaj $\binom{n}{n-2}$ in $\binom{200}{197}+\binom{200}{198}$\textcolor{gray}{$= \binom{201}{198}= \binom{201}{3}$}.
+\end{zgled}
+
+\begin{zgled}
+    Poenostavi $\binom{n+1}{n}$ in $\binom{n+1}{k+1}:\binom{n}{k}$
+\end{zgled}
+
+\begin{zgled}
+    Reši enačbo $C_{n+2}^3 =n\cdot C_{n+1}^1$.
+\end{zgled}
+
+\begin{example}
+    DN Računanje binoma 346č, 347ač, 348ac, 349
+\end{example}
+
+\begin{zgled}
+    350
+\end{zgled}
+
+\begin{example}
+    DN 351, 356
+\end{example}
+
+\subsection{Binomski izek}
 
 \end{document}
