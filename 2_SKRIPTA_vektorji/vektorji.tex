@@ -55,13 +55,14 @@ Vektorja sta enaka. če imata enako velikost, ležita na vzporednih premicah in 
 Dvočlena operacija, ki dvema vektorjema priredi nov vektor (vsoto). Operacija je komutativna in asociativna.
 
 \begin{enumerate}[i]
-    \item Paralelogramsko pravilo
-
-        Slika
-    \item Trikotniško pravilo
-    
-        Slika
+    \item Paralelogramsko pravilo - premaknemo vektorja na skupni začetek in vsota je diagonala
+    \item Trikotniško pravilo - premikamo na konec naslednjega vektorja
 \end{enumerate}
+
+\begin{figure}[H]
+    \includegraphics[width=0.7\textwidth]{sestevanje_vektorjev.pdf}
+    \centering
+\end{figure}
 
 Ničelni vektor $\vec{0}=\vec{AA}=\vec{AB}+\vec{BA}$
 
@@ -103,8 +104,54 @@ $m \cdot \vec{a}$, kjer $m\in\mathbb{R}_{\neq 0}$ je vektor z enako smerjo kot $
 
 Iz vektorja $\vec{a}$ lahko naredimo enotski vektor $\vec{e}=\frac{\vec{a}}{|\vec{a}|}$
 
+\begin{zgled}
+    Izračunaj $n$, če za vektor $\vec{a}$ velja $(n^2 +3)\vec{a}-(n+2)\vec{a}=(3+n)\vec{a}+\vec{a}$.
+\end{zgled}
 
+\begin{zgled}
+    Nariši trikotnik $ABC$, kjer $|\vec{AB}|=6cm$, $|\vec{BC}|=5cm$ in $|\vec{CA}|=3cm$. Nato nariši vektor $\vec{a}+2\vec{c}$.
+\end{zgled}
 
+\begin{example}
+    DN 286b, 293ab
+\end{example}
+
+\section*{Odvnisni in neodvisni vektorji}
+
+Vektorja $\vec{a}$ in $\vec{b}$ sta \textbf{linearno odvisna}, če lahko enega izrazimo z drugim $\vec{a}=k\cdot \vec{b}$. Vektorja ležita na vzporednih nosilkah in rečemo, da sta kolinearna. SLIKA 
+
+Dva vektorja $\vec{a}$ in $\vec{b}$ v ravnini, ki nista kolinearna sta \textbf{linearno neodvisna} in tvoria \textbf{bazo} ravnine. To pomeni, da lahko vsak vektor v ravnini na en sam način zapišemo kot njuno \textbf{lineanro kombinacijo}:
+\[\vec{v}=m\vec{a}+n\vec{b};\ m,n\in\mathbb{R}\]
+
+\begin{zgled}
+    V pravokotniku $ABCD$ sta bazna vektorja $\vec{a}=\vec{AB}$ in $\vec{b}=\vec{AD}$. Točka $T_1$ je razpolovišče $CD$, točka $T_2$ pa deli stranico $AB$ v razmerju $|AT_2|:|T_2 B|=1:2$. Izrazi vektorje $\vec{T_2 C}$, $\vec{T_1 B}$ in $\vec{T_2 T_1}$ v bazi.
+\end{zgled}
+
+Vektorja $\vec{a}$ in $\vec{b}$ sta linearno neodvisna, če velja $m\vec{a}+n\vec{b}=0 \iff m=0=n$.
+
+\begin{zgled}
+    Za bazna vektorja $\vec{a}$ in $\vec{b}$ določi $m,n\in\mathbb{R}$, če velja $(n-2)(\vec{a}+\vec{b})=3(m\vec{a}+\vec{b})$.
+\end{zgled}
+
+\begin{zgled}
+    V pravilnem šestkotniku $ABCD$ z bazo $\vec{a}=\vec{AB}$ in $\vec{b}=\vec{AF}$ zapiši vektorje $\vec{BF}$ in $\vec{AD}$.
+\end{zgled}
+
+\begin{zgled}
+    V pravokotniku $ABCD$ je točka $N$ razpolovišče stranice $BC$, točka $M$ pa leži na stranici $AB$ tako, da $|AM|:|MB|=3:2$. (DAJ SE ENO NALOGO TIPA AM:AB) V kakšnem razmerju deli stranica $MD$ daljico $AN$.
+\end{zgled}
+
+\begin{zgled}
+    V paralelogramu $ABCD$, je $E$ na stranici $CD$, da $|DE|:|DC|=1:5$, točka $F$ pa je presek $BE$ in $AC$. Pokaži, da velja $\vec{EF}=\frac{4}{9}\vec{EB}$.
+\end{zgled}
+
+\begin{zgled}
+    Pokaži, da težišče deli težiščnico v razmerju $2:1$.
+\end{zgled}
+
+\begin{example}
+    DN 304, 311ac, 313, 314
+\end{example}
 
 
 \section{Vektorji v prostoru}

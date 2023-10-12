@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230920072806" modified="D:20231011113023"/>
+<info created="D:20230920072806" modified="D:20231012111006"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -336,5 +336,30 @@ h
 288 704 l
 </path>
 <text transformations="translations" pos="176 672" stroke="darkblue" type="label" width="21.718" height="9.747" depth="0.83" valign="baseline" style="math">\vec{a}+\vec{b}</text>
+<path stroke="black" arrow="normal/normal">
+336 640 m
+432 640 l
+</path>
+<path stroke="black" arrow="normal/normal">
+432 640 m
+400 672 l
+</path>
+<path stroke="black" arrow="normal/normal">
+400 672 m
+368 672 l
+</path>
+<path stroke="black" arrow="normal/normal">
+368 672 m
+400 608 l
+</path>
+<path stroke="darkblue" arrow="normal/normal">
+336 640 m
+400 608 l
+</path>
+<text matrix="1 0 0 1 -28.7401 -2.47227" transformations="translations" pos="336.127 615.339" stroke="darkblue" type="label" width="55.568" height="9.747" depth="0.83" valign="baseline" style="math">\vec{a}+\vec{b}+\vec{c}+\vec{d}</text>
+<text transformations="translations" pos="362.395 642.843" stroke="black" type="label" width="5.266" height="7.118" depth="0" valign="baseline" style="math">\vec{a}</text>
+<text transformations="translations" pos="418.021 658.913" stroke="black" type="label" width="4.276" height="9.747" depth="0" valign="baseline" style="math">\vec{b}</text>
+<text transformations="translations" pos="381.246 675.292" stroke="black" type="label" width="4.311" height="7.118" depth="0" valign="baseline" style="math">\vec{c}</text>
+<text matrix="1 0 0 1 1.54517 0" transformations="translations" pos="380.01 649.024" stroke="black" type="label" width="5.185" height="9.747" depth="0" valign="baseline" style="math">\vec{d}</text>
 </page>
 </ipe>
