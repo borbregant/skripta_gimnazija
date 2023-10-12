@@ -3,12 +3,15 @@
 \usepackage{pgfplots}
 \pgfplotsset{width=10cm,compat=1.9}
 \usepackage{amsmath,amssymb,amsthm}
-\usepackage{gensymb}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{xcolor}
 \usepackage{blindtext}
 \usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{gensymb}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{graphicx}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -32,6 +35,77 @@
 \begin{document}
 
 \maketitle
+
+\section{Vektorji}
+
+Vektor je množica usmerjenih daljiv, ki imajo isto velikost in ležijo na vzporednih nosilkah. Operiramo le z enim predstavnikom vektorjev.
+
+Vektorju $\vec{a}=\vec{AB}$ lahko določimo:
+\begin{enumerate}[i]
+    \item Velikost: $|\vec{AB}|=d(A,B)$
+    \item Smer in usmerjenost: Določena s premico nosilko in usmerjenostjo
+\end{enumerate}
+
+Vektorja sta enaka. če imata enako velikost, ležita na vzporednih premicah in sta enako usmerjena.
+
+\subsection*{Operacije z vektorji}
+
+\subsubsection*{Seštevanje in odštevanje vektorjev}
+
+Dvočlena operacija, ki dvema vektorjema priredi nov vektor (vsoto). Operacija je komutativna in asociativna.
+
+\begin{enumerate}[i]
+    \item Paralelogramsko pravilo
+
+        Slika
+    \item Trikotniško pravilo
+    
+        Slika
+\end{enumerate}
+
+Ničelni vektor $\vec{0}=\vec{AA}=\vec{AB}+\vec{BA}$
+
+Nasprotni vektor za $\vec{AB}$ je vektor $\vec{BA}$.
+
+Enotski vektor je vektor z dolžino $1$.
+
+Razlika vektorjev  je seštevanje nasprotnega vektorja.
+
+\begin{zgled}
+    V pravilnem šestkotniku $ABCDEF$, zapiši vse vektorje, ki so enaki $\vec{AB}$. Zapiši še vse nasprotne vektorje vektorja $\vec{SB}$, kjer je $S$ središče tega šestkotnika.
+\end{zgled}
+
+\begin{zgled}
+    V kvadratu $ABCD$ izračunaj $\vec{BC}+\vec{CD}$, ter $\vec{DB}-\vec{CB}+\vec{CD}$.
+\end{zgled}
+
+\begin{zgled}
+    V kocki $ABCDA'B'C'D'$ izračunaj vrednost izrazov $\vec{AD}+\vec{A'B'}$ in $\vec{AB}-\vec{D'A}+\vec{BB'}$.
+\end{zgled}
+
+\begin{zgled}
+    Izračunaj $\vec{x}$, če je $\vec{x}-\vec{AC}=-\vec{AB}$.
+\end{zgled}
+
+\begin{example}
+    DN 275b, 277bdf,  278e, 281ač. 283c
+\end{example}
+
+\subsubsection*{Množenje vektorja s številom (skalarjem)}
+
+$m \cdot \vec{a}$, kjer $m\in\mathbb{R}_{\neq 0}$ je vektor z enako smerjo kot $\vec{a}$, usmerjenost je odvisna od predznaka $m$, njegova velikost pa je enaka $|m| \cdot |\vec{a}|$. Za $|m|>1$, se $\vec{a}$ podaljša, za $0<|m|<1$, se $\vec{a}$ skrajša.
+
+\begin{enumerate}[i]
+    \item Asociativnost v skalarnem delju: $m(n\vec{a})=(mn)\vec{a}$
+    \item Distributivnost v vektorskem delu: $m(\vec{a}+\vec{b})=m\vec{a}+m\vec{b}$
+    \item Distributivnost v skalarnem delu: $(m+n)\vec{a}=m\vec{a}+n\vec{a}$
+\end{enumerate}
+
+Iz vektorja $\vec{a}$ lahko naredimo enotski vektor $\vec{e}=\frac{\vec{a}}{|\vec{a}|}$
+
+
+
+
 
 \section{Vektorji v prostoru}
 

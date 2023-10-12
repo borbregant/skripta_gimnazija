@@ -216,7 +216,7 @@ Hitro računanje binoma: $\binom{98}{4}=\frac{98\cdot 87\cdot 96\cdot 95}{4\cdot
   \end{enumerate}
 
 \begin{zgled}
-    Izračunaj $\binom{n}{n-2}$ in $\binom{200}{197}+\binom{200}{198}$\textcolor{gray}{$= \binom{201}{198}= \binom{201}{3}$}.
+    Izračunaj $\binom{n}{n-2}$ in $\binom{200}{197}+\binom{200}{198}$\textcolor{gray}{$= \binom{201}{198}= \binom{201}{3}=\frac{201\cdot 200 \cdot 199}{3\cdot 2\cdot 1}$}.
 \end{zgled}
 
 \begin{zgled}
@@ -231,14 +231,36 @@ Hitro računanje binoma: $\binom{98}{4}=\frac{98\cdot 87\cdot 96\cdot 95}{4\cdot
     DN Računanje binoma 346č, 347ač, 348ac, 349
 \end{example}
 
-\begin{zgled}
-    350
-\end{zgled}
+%\begin{zgled}
+%    350
+%\end{zgled}
 
-\begin{example}
-    DN 351, 356
-\end{example}
+%\begin{example}
+%    DN 351, 356
+%\end{example}
 
 \subsection{Binomski izek}
+
+Vpeljava z $(a+b)^i$ in Pascalovim trikotnikom.
+
+\begin{tikzpicture}
+    \foreach \n in {0,...,4} {
+      \foreach \k in {0,...,\n} {
+        \node at (\k-\n/2,-\n) {${\n \choose \k}$};
+      }
+    }
+\end{tikzpicture}
+
+\[\left(a+b\right)^n = \binom{n}{0}a^n +\binom{n}{1}a^{n-1}b + \binom{n}{2}a^{n-2}b^2+\ldots + \binom{n}{n}b^n\]
+
+\begin{zgled}
+    Izračunaj $(x^2-\sqrt{2})^6$.
+\end{zgled}
+
+\begin{zgled}
+    Izračunaj 17. člen v razvoju $(2a-b^2)^23$. \textcolor{gray}{Predznak +, $\binom{23}{16}(2a)^7(b^2)^16$}
+\end{zgled}
+
+DN 380, 381
 
 \end{document}
