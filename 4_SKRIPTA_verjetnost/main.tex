@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage[margin=1in]{geometry}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+\newtheorem*{zgled}{Zgled}
+
+\title{Verjetnost}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Poskus} $\rightarrow$ \textbf{dogodek} $\rightarrow$ nemogoč, gotov, \fbox{slučajen}
+
+\textbf{Elementarni in sestavljeni dogodek} (npr. pade liho število pik na kocki)
+
+Množice in dogodki:
+
+Unija - Vsota dogodkov (enaka oznaka u)
+
+\begin{zgled}
+    Na koliko načinov lahko za ravno mizo sedi sedem povabljencev?
+\end{zgled}
+
+
+
+
+
+\end{document}
