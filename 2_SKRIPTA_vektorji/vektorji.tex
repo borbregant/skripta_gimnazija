@@ -22,6 +22,9 @@
     }
 \usepackage[slovene]{babel}
 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
 \newcounter{example}[section]
 \newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
    \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
@@ -38,9 +41,10 @@
 
 \section{Vektorji}
 
-Vektor je množica usmerjenih daljiv, ki imajo isto velikost in ležijo na vzporednih nosilkah. Operiramo le z enim predstavnikom vektorjev.
+Vektor je množica usmerjenih daljic, ki imajo isto velikost in ležijo na vzporednih nosilkah. Operiramo le z enim predstavnikom vektorjev.
 
 Vektorju $\vec{a}=\vec{AB}$ lahko določimo:
+
 \begin{enumerate}[i]
     \item Velikost: $|\vec{AB}|=d(A,B)$
     \item Smer in usmerjenost: Določena s premico nosilko in usmerjenostjo
@@ -116,7 +120,7 @@ Iz vektorja $\vec{a}$ lahko naredimo enotski vektor $\vec{e}=\frac{\vec{a}}{|\ve
     DN 286b, 293ab
 \end{example}
 
-\section*{Odvnisni in neodvisni vektorji}
+\section*{Odvisni in neodvisni vektorji}
 
 Vektorja $\vec{a}$ in $\vec{b}$ sta \textbf{linearno odvisna}, če lahko enega izrazimo z drugim $\vec{a}=k\cdot \vec{b}$. Vektorja ležita na vzporednih nosilkah in rečemo, da sta kolinearna. SLIKA 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230911162852" modified="D:20231017090554"/>
+<info created="D:20230911162852" modified="D:20231017084633"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -314,41 +314,87 @@ h
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 <path layer="alpha" stroke="black">
-32 0 0 32 96 640 e
+96 528 m
+160 640
+192 544
+224 656 c
 </path>
 <path stroke="black">
-32 0 0 32 224 640 e
+256 512 m
+288 624
+320 544
+352 592 c
 </path>
-<path stroke="black">
-32 0 0 32 352 640 e
+<path stroke="black" rarrow="normal/normal">
+352 624 m
+368 656
+416 656 c
 </path>
-<text matrix="1 0 0 1 17.5452 2.7813" transformations="translations" pos="80 640" stroke="black" type="label" width="5.694" height="4.289" depth="0" valign="baseline" style="math">x</text>
-<text matrix="1 0 0 1 1.54517 2.16323" transformations="translations" pos="224 640" stroke="black" type="label" width="19.393" height="7.473" depth="2.49" valign="baseline" style="math">f(x)</text>
-<text matrix="1 0 0 1 -3.39937 6.18066" transformations="translations" pos="352 640" stroke="black" type="label" width="32.251" height="7.473" depth="2.49" valign="baseline" style="math">g(f(x))</text>
-<text transformations="translations" pos="96 672" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline" style="math">A</text>
-<text transformations="translations" pos="224 672" stroke="black" type="label" width="8.057" height="6.808" depth="0" valign="baseline" style="math">B</text>
-<text transformations="translations" pos="352 672" stroke="black" type="label" width="7.833" height="6.808" depth="0" valign="baseline" style="math">C</text>
-<path stroke="darkblue" arrow="normal/normal">
-128 672 m
-192 672 l
+<path stroke="black" arrow="normal/normal">
+80 560 m
+240 560 l
 </path>
-<path stroke="darkblue" arrow="normal/normal">
-256 672 m
+<path stroke="black" arrow="normal/normal">
+144 544 m
+144 672 l
+</path>
+<path stroke="black" arrow="normal/normal">
+256 560 m
+416 560 l
+</path>
+<path stroke="black" arrow="normal/normal">
+320 544 m
 320 672 l
 </path>
-<text transformations="translations" pos="160 672" stroke="darkblue" type="label" width="5.95" height="6.926" depth="1.93" valign="baseline" style="math">f</text>
-<text transformations="translations" pos="288 672" stroke="darkblue" type="label" width="5.109" height="4.297" depth="1.93" valign="baseline" style="math">g</text>
-<text transformations="translations" pos="224 576" stroke="darkblue" type="label" width="20.468" height="6.926" depth="1.93" valign="baseline" style="math">g\circ f</text>
-<path stroke="darkblue" arrow="normal/normal">
-128 592 m
-320 592 l
+<use name="mark/disk(sx)" pos="176 560" size="normal" stroke="black"/>
+<text transformations="translations" pos="176 544" stroke="black" type="label" width="5.266" height="4.289" depth="0" valign="baseline" style="math">a</text>
+<text transformations="translations" pos="352 544" stroke="black" type="label" width="5.266" height="4.289" depth="0" valign="baseline" style="math">a</text>
+<use name="mark/disk(sx)" pos="352 560" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="144 592" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="320 592" size="normal" stroke="black"/>
+<text transformations="translations" pos="128 592" stroke="black" type="label" width="4.276" height="6.918" depth="0" valign="baseline" style="math">b</text>
+<text transformations="translations" pos="304 592" stroke="black" type="label" width="4.276" height="6.918" depth="0" valign="baseline" style="math">b</text>
+<path stroke="black" fill="lightblue" opacity="30%" stroke-opacity="opaque">
+160 560 m
+192 560 l
+192 608 l
+144 608 l
+144 576 l
+160 576 l
+h
 </path>
-<text transformations="translations" pos="144 640" stroke="darkblue" type="label" width="45.278" height="6.926" depth="1.93" valign="baseline" style="math">f: A\rightarrow B</text>
-<text transformations="translations" pos="272 640" stroke="darkblue" type="label" width="44.798" height="6.815" depth="1.93" valign="baseline" style="math">g: B\rightarrow C</text>
-<text transformations="translations" pos="144 608" stroke="darkblue" type="label" width="54.836" height="7.473" depth="2.49" valign="baseline" style="math">f: x\mapsto f(x)</text>
-<text transformations="translations" pos="272 608" stroke="darkblue" type="label" width="80.552" height="7.473" depth="2.49" valign="baseline" style="math">g: f(x)\mapsto g(f(x))</text>
-<use name="mark/disk(sx)" pos="96 640" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="224 640" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="352 640" size="normal" stroke="black"/>
+<path stroke="black" fill="lightblue" opacity="30%" stroke-opacity="opaque">
+336 560 m
+368 560 l
+368 608 l
+320 608 l
+320 576 l
+336 576 l
+h
+</path>
+<path stroke="lightblue" fill="lightblue" arrow="normal/normal" rarrow="normal/normal" opacity="30%" stroke-opacity="opaque">
+144 608 m
+144 576 l
+</path>
+<path stroke="lightblue" fill="lightblue" arrow="normal/normal" rarrow="normal/normal" opacity="30%" stroke-opacity="opaque">
+160 560 m
+192 560 l
+</path>
+<path stroke="lightblue" fill="lightblue" arrow="normal/normal" rarrow="normal/normal" opacity="30%" stroke-opacity="opaque">
+336 560 m
+368 560 l
+</path>
+<path stroke="lightblue" fill="lightblue" arrow="normal/normal" rarrow="normal/normal" opacity="30%" stroke-opacity="opaque">
+320 608 m
+320 576 l
+</path>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="336 528" stroke="darkcyan" type="label" width="56.118" height="7.473" depth="2.49" valign="baseline" style="math">(a-\delta , a+\delta)</text>
+<text transformations="translations" pos="288 576" stroke="darkcyan" type="label" width="21.098" height="6.919" depth="0.83" valign="baseline" style="math">b-\varepsilon</text>
+<text transformations="translations" pos="288 608" stroke="darkcyan" type="label" width="21.098" height="6.919" depth="0.83" valign="baseline" style="math">b+\varepsilon</text>
+<path stroke="darkcyan" dash="dashed">
+320 592 m
+352 592 l
+352 560 l
+</path>
 </page>
 </ipe>

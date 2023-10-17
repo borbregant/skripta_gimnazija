@@ -20,6 +20,8 @@
     pdfpagemode=FullScreen,
     }
 \usepackage[slovene]{babel}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
 
 \newcounter{example}[section]
 \newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
@@ -39,16 +41,28 @@
 
 \textbf{Elementarni in sestavljeni dogodek} (npr. pade liho število pik na kocki)
 
-Množice in dogodki:
+Množice in dogodki (lastnosti komutativnost):
 
-Unija - Vsota dogodkov (enaka oznaka u)
+Unija - Vsota dogodkov (enaka oznaka $\cup$)
+
+Presek ($\{x;x\in A \land x\in B\}$) - Produkt dogodkov (enaka oznaka $\cap$). Primer $A$: manj kot 3 pike, $B$: liho število pik $\rightarrow$ $A\cap B$: pade 1. Komut., $A\cap G=A$, $A\cap N=N$.
+
+Množici disjunktni $\rightarrow$ - Nezdružljiva dogodka npr. $A$ dve piki, $B$ pet pik $\rightarrow$ $A\cap B=N$.
+
+Komplementarna množica $A^c$ - Nasprotni dogodek $A'$ in se zgodi, ko se $A$ ne zgodi. $A\cap A'=N$, $G' =N$.
+
+Razlika dogodkov $A-B$: $A$ zgodi, $B$ se ne zgodi, ni komutativna
+
+Podmnožica - Način dogodka: $A\subset B$: Vsakič, ko se zgodi $A$, se zgodi tudi $B$.
 
 \begin{zgled}
-    Na koliko načinov lahko za ravno mizo sedi sedem povabljencev?
+    $A$ naj bo izvlečem rdečo karto, $B$ naj bo izvlečem srčevega kralja. Kakšna zveza velja?
 \end{zgled}
 
+Met kocke ima $6$ elementarnih dogodkov. Iz tega sestavimo \textbf{vzorčni prostor}. Sestavljajo ga dogodki, ki so med seboj nezdružljivi in je njihova vsota gotov dogodek.
+Še en vzorčni prostor bi lahko bil $A$ pade sodo pik, $B$ pade liho pik.
 
-
+Vzorčni prostor dveh kock lahko predstavimo kot mrežo vseh možnosti. Pomaga pri npr. koliko verjetnost, da pade $5$ pik.
 
 
 \end{document}
