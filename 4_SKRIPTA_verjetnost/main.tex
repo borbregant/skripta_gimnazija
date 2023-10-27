@@ -103,6 +103,41 @@ Vzorčni prostor lahko tudi z drevesom npr. iz vrečke jemljemo kroglice bele in
     Na dirki tekmujejo konji $A$, $B$. $C$. $A$ ima pol možnosti glede na $B$, konj $B$ pa ima trikrat večjo možnost zmage kot $C$. Koliko so verjetnosti za zmago posameznega konja.
 \end{zgled}
 
+....
+
+
+
+\section*{Pogojna verjetnost}
+
+Dogodka $A$ in $B$ sta \textbf{neodvisna}, če verjetnost enega ne vpliva na verjetnost drugega. Ekvivalentno $P\left(A\cap B\right) =P(A)\cdot P(B)$.
+
+Dogodek $B$ je odvisen od dogodka $A$, če je verjetnost $B$ odvisna od tega, ali se je $A$ zgodil ali ne. Pišemo $P(B|A)$.
+
+Če sta dogodka neodvisna, je $P(B|A)=P(B)$.
+
+\begin{zgled}
+    V vreči imamo 7 belih in 3 rdeče kroglice. Kolikšna je verjetnost, da izvlečemo 3 kroglice iste barve, če kroglice vračamo ali pa ne. Če ne vračamo izračunajmo, če vlečemo kroglice zapored ali naenkrat \textcolor{gray}{(verjetnost bo tu enaka)}.
+\end{zgled}
+
+$P(B|A)=\frac{P(A\cap B)}{P(A)}$ in slika Vennovega diagrama!!!
+
+\begin{zgled}
+    Izmed listkov s števili od 1 do 11 izberemo naključno dve števili. Kolikšna je verjetnost, da sta izbrani števili lihi, če je vsota sodo število.
+\end{zgled}
+
+\begin{zgled}
+    Mečemo dve kocki. Kolikšna je verjetnost, da je na eni kocki padla 6, če kocki pokažeta vsoto 8.
+\end{zgled}
+
+\begin{zgled}
+    Izračunaj $P(A\cap B)$, $P(A|B)$ in $P(A' \cap B)$, če je $P(A)=\frac{1}{4}$, $P(B)=\frac{1}{3}$ in $P(A \cup B)=\frac{3}{5}$. \textcolor{gray}{$P(A' \cap B)=P(B)-P(A\cap B)$ iz diagrama}
+\end{zgled}
+
+\begin{example}
+    DN 476, 483, 512, 521.
+\end{example}
+
+
 
 
 
