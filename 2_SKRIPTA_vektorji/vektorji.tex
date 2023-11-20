@@ -31,7 +31,7 @@
 
 \newtheorem*{zgled}{Zgled}
 
-\title{Vektorji}
+\title{\vspace{-2.0cm}Vektorji}
 \author{Bor Bregant}
 \date{\vspace{-5ex}}
 
@@ -175,7 +175,7 @@ Standardna baza je ortonormirana baza $\{\vec{i},\vec{j},\vec{k}\}$, kjer ti vek
 V tej standardni bazi , lahko vsako točko $A(a_1,a_2,a_3)$ predstavimo s krajevnim vektorjem $\vec{r_A}=a_1 \vec{i}+a_2\vec{j}+a_3\vec{k}$. Pišemo $\vec{r_A}=(a_1,a_2,a_3)$. Posebej $\vec{i}=(1,0,0) , \vec{j}=(0,1,0)$ in $\vec{k}=(0,0,1)$.
 
 \begin{figure}[H]
-\includegraphics[width=0.7\textwidth]{vektorji_slika.pdf}
+\includegraphics[width=0.6\textwidth]{vektorji_slika.pdf}
 \centering
 \end{figure}
 
@@ -234,6 +234,10 @@ Velja še, da je krajevni vektor $\vec{r_T}$ težišča $T$ trikotnika $ABC$ ena
 
 \[\vec{a}\cdot\vec{b}=|\vec{a}||\vec{b}|\cos\varphi, \ \text{kjer je}\  \varphi \ \text{vmesni kot}\]
 
+\begin{zgled}
+    Izračunaj $\vec{a} \cdot \vec{b}$, če je $|\vec{a}|=2$, $|\vec{b}|=3$ in $\varphi = 150^\circ$.
+\end{zgled}
+
 Dolžina pravokotne projekcije $\vec{b}$ na $\vec{a}$ je $pr_{\vec{a}}\vec{b}=|\vec{b}|\cos\varphi$.\\
 
 Za skalarni produkt velja komutativnost, distributivnost in homogenost.\\
@@ -273,14 +277,20 @@ Kosinusni izrek $c^2=a^2+b^2-2ab\cos\gamma$
 \end{zgled}
 
 \begin{example}
-    357a, 360c, 366, 375b, 377ab
+    357a, 360c, 366, 375b, 377b
 \end{example}
 
 \subsection{Skalarni produkt v ortonormirani bazi}
 
-\[\vec{a}\cdot\vec{b}=a_1b_1+a_2b_2+a_3b_3\]
-\[|\vec{a}|=\sqrt{a_1^2+a_2^2+a_3^2}\]
-\[\cos\varphi=\frac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}=\frac{a_1b_1+a_2b_2+a_3b_3}{\sqrt{a_1^2+a_2^2+a_3^2}\sqrt{b_1^2+b_2^2+b_3^2}}\]
+\begin{align*}
+\vec{a}\cdot\vec{b}&=a_1b_1+a_2b_2+a_3b_3\\
+|\vec{a}|&=\sqrt{a_1^2+a_2^2+a_3^2}\\
+\cos\varphi&=\frac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}=\frac{a_1b_1+a_2b_2+a_3b_3}{\sqrt{a_1^2+a_2^2+a_3^2}\sqrt{b_1^2+b_2^2+b_3^2}}
+\end{align*}
+
+\begin{zgled}
+    Za vektorja $\vec{a}=(-1,4)$ in $\vec{b}=(-1,-3)$  izračunaj njun skalarni produkt.
+\end{zgled}
 
 \begin{zgled}
     Za vektorja $\vec{a}=(2,1,4)$ in $\vec{b}=(1,0,-1)$ izračunajmo $(2\vec{a}+\vec{b})\cdot\vec{b}$.
@@ -294,14 +304,17 @@ Kosinusni izrek $c^2=a^2+b^2-2ab\cos\gamma$
     Naloga z mature 2021. \href{https://youtu.be/Qari4okAS7w}{Video rešitve}
 \end{zgled}
 
-    \begin{figure}[H]
-    \includegraphics[width=\textwidth]{vektorji.naloga.png}
-    \end{figure}
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{vektorji.naloga.png}
+\end{figure}
 
 \begin{zgled}
     Zapiši razdaljo med točkama $A$ in $B$ ter enotski vektor $\vec{e}$ v smeri vektorja $\vec{AB}$, če je $A(1,4)$ in $B(-1,8)$.
 \end{zgled}
 
+\begin{zgled}
+    Določi $y$, da bosta vektorja $(2,y,0)$ in $(0,2,2)$ oklepala kot $60^\circ$.
+\end{zgled}
 
 \begin{example}
     NALOGE 388, 389, 390ac, 393, 399, 405, 408, 414
