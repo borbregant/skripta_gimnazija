@@ -236,12 +236,17 @@ Limita je neke vrste nadomestek za vrednost funkcije.
 
 \subsubsection*{Limita $e$ in $\frac{\sin x}{x}$}
 
-\[\Lim{x\rightarrow\infty}\left(1+\frac{1}{x}\right)^x =e\]
-
-\[\Lim{x\rightarrow 0} \frac{\sin x}{x} =1\]
+\begin{align*}
+    &\Lim{x\rightarrow\infty}\left(1+\frac{1}{x}\right)^x =e\\
+    &\Lim{x\rightarrow 0} \frac{\sin x}{x} =1
+\end{align*}
 
 \begin{zgled}
-    Izračunaj $\Lim{x\rightarrow\infty} \left(1+\frac{1}{2x}\right)^{3x}$, $\Lim{x\rightarrow\infty}\left(\frac{5x+3}{5x-7}\right)^x$ in $\Lim{x\rightarrow\infty}\left(\frac{3x-1}{x+2}\right)^x$ in $\Lim{x\rightarrow\infty}\left(\frac{x+2}{x+5}\right)^{x+1}$
+    Izračunaj $\Lim{x\rightarrow\infty} \left(1+\frac{1}{2x}\right)^{x}$, $\Lim{x\rightarrow\infty} \left(1+\frac{1}{x}\right)^{3x}$ in $\Lim{x\rightarrow\infty} \left(1+\frac{1}{4x}\right)^{5x}$.
+\end{zgled}
+
+\begin{zgled}
+    Izračunaj $\Lim{x\rightarrow\infty}\left(\frac{5x+3}{5x-7}\right)^x$ in $\Lim{x\rightarrow\infty}\left(\frac{3x-1}{x+2}\right)^x$ in $\Lim{x\rightarrow\infty}\left(\frac{x+2}{x+5}\right)^{x+1}$
 \end{zgled}
 
 \begin{example}
@@ -249,12 +254,22 @@ Limita je neke vrste nadomestek za vrednost funkcije.
 \end{example}
 
 \begin{zgled}
-    Izračunaj $\Lim{x\rightarrow 0}\frac{\sin 3x}{2x}$, $\Lim{x\rightarrow 0}\frac{\sin 3x}{\sin 4x}$, $\Lim{x\rightarrow 0}\frac{1-\cos x}{x}$ \textcolor{gray}{razširimo s konjugirano} in $\Lim{x\rightarrow 0} x^{-1}\tan x \cos x$.
+    Izračunaj $\Lim{x\rightarrow 0}\frac{\sin x}{2x}$, $\Lim{x\rightarrow 0}\frac{\sin 3x}{x}$ in $\Lim{x\rightarrow 0}\frac{\sin 4x}{5x}$.
+\end{zgled}
+
+\begin{zgled}
+    Izračunaj $\Lim{x\rightarrow 0}\frac{\sin 3x}{\sin 4x}$, $\Lim{x\rightarrow 0}\frac{1-\cos x}{x^2}$ \textcolor{gray}{razširimo s konjugirano} in $\Lim{x\rightarrow 0} x^{-1}\tan x \cos x$.
 \end{zgled}
 
 \begin{example}
     DN 621acče, 623č\textcolor{red}{e}, 626c
 \end{example}
 
+\begin{zgled}
+    \textcolor{red}{Pokaži, da je funkcija $f(x)=\sqrt{x}$ zvezna povsod, kjer je definirana.}\\
+    \textcolor{gray}{Po definiciji $|f(x)-f(a)|=|\sqrt{x}-\sqrt{a}|=\left|\frac{x-a}{\sqrt{x}+\sqrt{a}}\right| \leq \frac{|x-a|}{\sqrt{a}}$\\
+    Izberemo lahko $\delta = \varepsilon \sqrt{a}$\\
+    V $x=0$ posebej $|f(x)-f(0)|=\sqrt{x}$ pa izberemo $\delta =\varepsilon^2$}
+\end{zgled}
 
 \end{document}
