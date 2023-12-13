@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{gensymb}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\newcommand{\Lim}[1]{\raisebox{0.5ex}{\scalebox{0.8}{$\displaystyle \lim_{#1}\;$}}}
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+\newtheorem*{zgled}{Zgled}
+
+\title{Racionalna števila}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\section*{Ulomki in decimalni zapis}
+
+Desetiški ulomek: V decimalnem zapisu je število decimalk končno
+
+\begin{zgled}
+    $27:40=\textcolor{blue}{0}.\textcolor{green}{675}=\frac{675}{1000}$ in $67:16$.
+\end{zgled}
+
+Končen decimalni zapis $\iff$ imenovalec ulomka potenca $10$ $\iff$ \textcolor{red}{v $\mathbb{P}$ razcepu imenovalca le 2 in 5.}
+
+Primeri: $\frac{3}{40}$, $\frac{1}{2}$ in $\frac{3}{50}$.
+
+Nedesetiški ulomek: Deljenje se ne konča v končno korakih.
+
+Primeri: $\frac{2}{3}=0.666\ldots=0.\bar{6}$, $14:11=1.2727\ldots$. Ponavljanje imenujemo perioda reda $r$.
+
+\begin{zgled}
+    Zapiši $\frac{13}{100}$ in $\frac{15}{8}$ v decimalnem ter $1.6$ in $-0.04$ v ulomku.
+\end{zgled}
+
+\begin{zgled}
+    Na pamet izračunaj $1.27\cdot 10$, $4.5:100$ in $3.12\cdot 10^{-1}$.
+\end{zgled}
+
+\begin{zgled}
+    Zapiši $3.\bar{6}$, $2.\bar{45}$ in $1.4\bar{72}$ \textcolor{gray}{najprej $\cdot 10$, potem $\cdot 1000$} v obliki ulomka.
+\end{zgled}
+
+\begin{zgled}
+    Zapiši $\frac{2}{3}$, $\frac{3}{11}$ v decimalnem in $0.\bar{202}$ v obliki ulomka.
+\end{zgled}
+
+\begin{zgled}
+    Izračunaj $0.125+0.25\cdot \frac{8}{5}$.
+\end{zgled}
+
+\begin{example}
+    Ponovi teorijo, 370 bd, 371abfg, 373b
+\end{example}
+
+\end{document}
