@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{gensymb}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\newcommand{\Lim}[1]{\raisebox{0.5ex}{\scalebox{0.8}{$\displaystyle \lim_{#1}\;$}}}
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+\newtheorem*{zgled}{Zgled}
+
+\title{Racionalna števila}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+
+\section*{Procentni račun}
+
+\begin{zgled}
+    Osnovna živilska košarica stane 100 evrov. Koliko bo stala naslednje leto, če se bo podražila za $7\%$?
+    \begin{align*}
+        \text{cena}_{\text{nova}} &= \text{cena}_{\text{stara}}+\text{podražitev}\\
+            &= \text{cena}_{\text{stara}}+7\% \text{od stare cene}\\
+            &= \text{cena}_{\text{stara}}+\frac{7}{100}\text{cena}_{\text{stara}}\\
+            &= \text{cena}_{\text{stara}}\left(1+\frac{15}{100}\right)\\
+    \end{align*}
+    Koliko bo stala čez dve leti, če se bo skupno pocenila za $3\%$?
+\end{zgled}
+
+\begin{zgled}
+    Knjiga se je pocenila za $30\%$, nato pa podražila za $10\%$. Zdaj stane 62 evrov.\\
+    Koliko je stala pred spremembami cene?\\
+    Koliko odstotna je bila skupna podražitev?\\
+    Ali bi bilo vseeno, če se najprej podraži in nato poceni?
+\end{zgled}
+
+\end{document}
