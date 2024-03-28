@@ -141,23 +141,22 @@ $-1$ & $2$ \\
 
 \begin{zgled}
     \begin{itemize}
-    \item Določimo eksponentno funkcijo $f$, katere graf poteka skozi $A(2,9)$. Nato v isti koordnatni sistem narišimo $f(x), f(x+1), f(x+1)-1, f(-x),\\ |f(x)-3|$.
+    \item Določimo eksponentno funkcijo $f(x)=a^x$, katere graf poteka skozi $A(2,9)$. Nato v isti koordnatni sistem narišimo $f(x), f(x+1), f(x+1)-1, f(-x), |f(x)-3|$.
     \end{itemize}
-    
 \end{zgled}
 
-\begin{example}
-Poišči predpis za eksponentno funkcijo $f(x)=a^x$, za katero je:\\
-(a) $f\left(\frac{1}{2}\right)=2$\qquad (b) $f\left(-\frac{3}{2}\right)=\frac{27}{125}$ \qquad (c) $f(-2)=\frac{9}{4}$
-\end{example}
 \begin{example}
 V isti koordinatni sistem nariši grafe funkcij\\
 (a) $f(x)=3^x, g(x)=3^x-2, h:x\mapsto 3^{x-2}$\qquad (b) $f(x)=2^{-x}, g(x)=\frac{3}{2}2^{-x}$
 \end{example}
 \begin{example}
-Zapiši tri čim lepše točke grafa $f(x)=2^{x-2}-1$. Nato nariši 
- grafe $f(x)$, $g(x)=|f(x)|$ in $h(x)=f(|x|)$.
+Zapiši tri čim lepše točke grafa $f(x)=2^{x-2}-1$. Nato nariši grafe $f(x)$, $g(x)=|f(x)|$ in $h(x)=f(|x|)$.. Zapiši še ničle, z.v., $D_f$, $Z_f$ in enačbo asimptote.
 \end{example}
+
+\begin{example}
+    Nariši $f(x)=-3\cdot 2^{x-1}$ in $g(x)=\frac{1}{3^x}-1$.
+\end{example}
+
 \begin{example}
 Za funkcijo $f(x)=-2^x+2$ zapiši začetno vrednost, ničle, enačbo vodoravne asimptote in nariši njen graf. Poišči še predpis funkcije $g$, ki je dobljena tako, da graf $f$ premaknemo za vektor $(1,-1)$.
 \end{example}
@@ -171,7 +170,8 @@ Tri skupine eksponentnih enačb in postopek reševanja:\\
 Vrsta enačbe           & Postopek reševanja &Primer                      \\ \hline
 $a^{f(x)}=a^{g(x)}$             & $f(x)=g(x)$  &$3^{x-1}=3^{2x+2}$                            \\
 $a^{f(x)}=b^{f(x)}$             & $f(x)=0$    &$5^{2x}=(\frac{1}{2})^{2x}$                          \\
-$a^{f(x)}=b$ & \textit{Logaritmiranje}&$2^{x-3}=16$\\\hline
+Nova spremenljivka (opazimo $\square^{2x} + \square^x+\square$ ali pa $\square^{-x}$)             & $t=\square^x$    &$\cdots$        \\
+$\textcolor{red}{a^{f(x)}=b}$ & \textit{Logaritmiranje}&$2^{x-3}=5$\\\hline
 \end{tabular}
 
 \begin{zgled}
@@ -181,8 +181,24 @@ $a^{f(x)}=b$ & \textit{Logaritmiranje}&$2^{x-3}=16$\\\hline
     Rešimo enačbo $4\cdot 2^{2x+1}=\frac{1}{8}$.
 \end{zgled}
 \begin{zgled}
+    Rešimo enačbo $2\cdot 4^{x+3}=32^{x-1}$.
+\end{zgled}
+\begin{zgled}
+    Rešimo enačbo $9\cdot 3^{2x-2}=\sqrt[9]{27^{x+1}}$.
+\end{zgled}
+\begin{zgled}
+    Poišči presečišča za $f(x)=4^{x-1}$ in $g(x)=8^{2x-3}$.
+\end{zgled}
+\begin{zgled}
+    Rešimo enačbo $4\cdot 2^{2x+1}=\frac{1}{8}$.
+\end{zgled}
+\begin{zgled}
     Rešimo enačbo $5^{x+1}+5^{x+2}=6$.
 \end{zgled}
+\begin{zgled}
+    Rešimo enačbo $2^{x-3}+3\cdot 2^{x-1}-2^x=20$.
+\end{zgled}
+
 \begin{zgled}
     Rešimo enačbo $2\cdot 7^x-11=21\cdot 7^{-x}$.
 \end{zgled}
@@ -192,7 +208,7 @@ $a^{f(x)}=b$ & \textit{Logaritmiranje}&$2^{x-3}=16$\\\hline
 
 \begin{example}
     Reši enačbe:\\
-    (a) $5^x=125$\qquad (b) $4^{x-1}=16$ \qquad (c) $2^{x-3}=4^3$ \qquad (d) $5^{x-1}=\frac{1}{25}$ \\\qquad (e) $\left(\frac{8}{27}\right)^x=\frac{3}{2}$ \qquad (f) $4^x=-8$ \qquad (g) $\sqrt{27})9^{1-x}$ \qquad (h) $5^{3x}=5^{7x-2}$ \qquad \\ (i) $4^{t^2}=4^{6-t}$
+    (a) $5^x=125$\qquad (b) $4^{x-1}=16$ \qquad (c) $2^{x-3}=4^3$ \qquad (d) $5^{x-1}=\frac{1}{25}$ \\\qquad (e) $\left(\frac{8}{27}\right)^x=\frac{3}{2}$ \qquad (f) $4^x=-8$ \qquad (g) $\sqrt{27}=9^{1-x}$ \qquad (h) $5^{3x}=5^{7x-2}$ \qquad \\ (i) $4^{t^2}=4^{6-t}$
 \end{example}
 \begin{example}
     Reši enačbe:\\
